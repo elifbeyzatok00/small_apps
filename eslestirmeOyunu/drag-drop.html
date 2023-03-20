@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="stil.css">
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eşleştirme Oyunu</title>
+    <p>Resimler ile yazıları doğru eşleştirin</p>
+</head>
+<body>
+    <div><img width="150px" height="100px" src="kopek.jpg" draggable="true" ondragstart="tut(event)" id="1"></div>
+    <div><img width="150px" height="100px" src="balik.jpeg" draggable="true" ondragstart="tut(event)" id="2"></div>
+    <div><img width="150px" height="100px" src="ladybug.jpeg" draggable="true" ondragstart="tut(event)" id="3"></div>
+
+    <br><br><br><br><br><br><br><br>
+    <div id="kutu1" ondrop="birak(event)" ondragover="tasinmaDurumu(event)">Köpek</div>
+    <div id="kutu3" ondrop="birak(event)" ondragover="tasinmaDurumu(event)">Uğur Böceği</div>
+    <div id="kutu2" ondrop="birak(event)" ondragover="tasinmaDurumu(event)"> Balık</div>
+
+    <br><br><br><br><br><br><br><br>
+
+    <p id="sonuc">Sonuc: </p>
+</body>
+</html>
